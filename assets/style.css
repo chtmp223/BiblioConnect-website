@@ -6,8 +6,6 @@ header {
     background-size: cover;
     height: 70vh;
     padding: 23vh 0 47vh; 
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
 }
 
 section {
@@ -191,5 +189,4 @@ ul li a {
     color: white; 
     display: inline-block;
 }
-
 
