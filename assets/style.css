@@ -14,12 +14,17 @@ section {
     padding: 100px 0;
 }
 
+
 .title {
    background-color: #02a2ad; 
    padding: 10px 20px;
    color: white; 
    font-size: 40px; 
    display: inline-block;
+}
+
+.row {
+    padding-left: 15px;
 }
 
 .subtitle {
@@ -163,11 +168,18 @@ ul li a {
     font-size: 50px;
 }
 
-#rectangle{
-    width:70px;
-    height:10px;
-    background:#f8b24f;
-    text-align: center; 
+#rectangle_section{
+    width: 50px; 
+    height: 10px; 
+    margin: 20px; 
+    background-color:#f8b24f;
+}
+
+#subtag {
+    background-color: #f8b24f; 
+    padding: 5px 10px;
+    color: white; 
+    display: inline-block;
 }
 
 

@@ -29,6 +29,9 @@
             <a class="nav-link js-scroll-trigger" href="#intro">Introduction</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#dataset">Dataset</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#econ">Economy</a>
           </li>
           <li class="nav-item">
@@ -56,38 +59,29 @@
       </h1>
       <p class = "subtitle">
         <span class = "static" style="color: white">Impact of Public Libraries on Central New York communities</span>
-      </p>
-
-      <div id="rectangle" style = "margin:0 auto"></div>
-      <br>
+      </p><br>
       <div class="container" style="color: white">
         <div class="row">
           <div class="col-sm">
+            <div id="rectangle" style = "margin:0 auto"></div><br>
             <h4>Chau Pham</h4>
-            <p><a href="mailto:cpham@colgate.edu" style="color: white">cpham@colgate.edu</a></p>
+            <p><i><a href="mailto:cpham@colgate.edu" style="color: white">cpham@colgate.edu</a></i></p>
             <p>Department of Computer Science</p>
           </div>
           <div class="col-sm">
+            <div id="rectangle" style = "margin:0 auto"></div><br>
             <h4>William Cipolli</h4>
-            <p><a href="mailto:wcipolli@colgate.edu" style="color: white">wcipolli@colgate.edu</a></p>
+            <p><i><a href="mailto:wcipolli@colgate.edu" style="color: white">wcipolli@colgate.edu</a></i></p>
             <p>Department of Mathematics</p>
           </div>
           <div class="col-sm">
+            <div id="rectangle" style = "margin:0 auto"></div><br>
             <h4>Joshua Finnell</h4>
-            <p><a href="mailto:jfinnell@colgate.edu" style="color: white">jfinnell@colgate.edu</a></p>
+            <p><i><a href="mailto:jfinnell@colgate.edu" style="color: white">jfinnell@colgate.edu</a></i></p>
             <p>University Libraries</p>
           </div>
         </div>
       </div>
-    </div>
-    
-    <!-- Scrolling mouse animator -->
-    <div class="mouse">
-      <a href="#intro">
-      <div class="mouse-icon">
-        <span class="mouse-wheel"></span>
-      </div>
-      </a>
     </div>
   </header>
 
@@ -103,52 +97,205 @@
             community literacy. In a community, they make their presence in people’s everyday life with the curated collection of 
             books, unlimited Internet access, research support, and book events. Therefore, understanding the use of their services 
             can have a significant impact on the growth of our communities here in Central New York. In particular, this research 
-            project highlights the correlation between economy, education and library usage. With the assistance of exploratory data 
-            analysis and visualization, this project shed light on the impact do public libraries have on communities in Central New York.
+            project highlights the correlation between education and library usage, as well as demonstrate the libraries' economic values. 
+            With the assistance of exploratory data analysis and visualization, this project shed light on the impact do public libraries 
+            have on communities in Central New York.
           </div>
           <br>
           <br><hr><br>
           
           <div class="row">
-          <script type='text/javascript' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'></script>
-          <div class='tableauPlaceholder' style='width: 100%; height: 100%;'><object class='tableauViz' width='100%' height='670px' 
-            style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-apnortheast-a.online.tableau.com%2F' /> 
-            <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;chtmp223' />
-            <param name='name' value='CNYLibraryDistribution&#47;Library' /><param name='tabs' value='no' /><param name='toolbar' value='yes' />
-            <param name='showAppBanner' value='false' /></object></div>
+            <script type='text/javascript' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'></script>
+            <div class='tableauPlaceholder' style='width: 100%; height: 100%;'><object class='tableauViz' width='100%' height='670px' 
+              style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-apnortheast-a.online.tableau.com%2F' /> 
+              <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;chtmp223' />
+              <param name='name' value='CNYLibraryDistribution&#47;Library' /><param name='tabs' value='no' /><param name='toolbar' value='yes' />
+              <param name='showAppBanner' value='false' /></object></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="research" class="bg-light">
+  <section id="dataset" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class = "title">Research Topic</h2>
+          <h2 class = "title">Dataset</h2>
           <br><br>
-          <p class="lead">Man-made disasters like COVID-19 have affected millions of people around the world. Under the guidance of Professor Junyi Jessy Li 
-            (the University of Texas at Austin) and Professor Cornelia Caragea (University of Illinois at Chicago), I will investigate how people react to these 
-            disasters through their Tweets. At the end of the summer, I will hopefully be able to improve an existing BERT model, as well as to analyze the shift 
-            in the emotion distribution over the time. 
-          </p>
-          <br>
-          <div style="text-align:center">    
-            <input type="button" class="btn btn-href" value="Final Report (Coming Soon)" onclick="window.open()" />
+          <div class="row">
+            In this project, I use the BiblioConnect dataset, which features 49 public libraries in 5 Central New York 
+            counties (Cayuga, Cortland, Madison, Onondaga, Oswego). Metrics in this dataset span over 3 main categories: 
+            Borrower/Circulation, Program Number/Attendance, Funding/Value. Below is a table listing the metrics for each category. 
+          </div><br><hr><br>
+
+          <div class="row">
+            <table class="table table-bordered">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Borrower/Circulation</th>
+                  <th scope="col">Program Number/Attendance</th>
+                  <th scope="col">Funding/Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Average and Total Attendance per Children’s Program Session</td>
+                  <td>Total Circulation</td>
+                  <td>Operating Fund Balance (Fiscal Year Beginning)</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Average and Total Attendance per Young Adult’s Program Session</td>
+                  <td>Children’s Circulation</td>
+                  <td>Total Capital Income</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Number of Children’s and Young Adult's Programs Sessions</td>
+                  <td>Total Circulation of Children’s Books</td>
+                  <td>Total Federal Aid</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Number of Registered Borrowers (total & per capita)</td>
+                  <td>Total Circulation of Adults’ Books</td>
+                  <td>Total Local Public Sources</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+
         </div>
       </div>
     </div>
   </section>
 
-  <section id="journal">
+  <section id="econ">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class = "title">Journal Entries</h2>
+          <h2 class = "title">Economic Values</h2>
           <br><br>
+          <div class="row">
+            Public libraries have been widely known for its vast offerings of intellectual resources and personal development opportunities.
+             Despite their apparent human capital values, they continue to get sidetracked by the government when it comes to funding. 
+             According to a 2019 report by the New York Library Association, the Cuomo government has been attempting to defund the State Library 
+             Aid program for nine consecutive years. While this attempt has been futile, it shows that the government views public libraries as an 
+             expense rather than an investment. Therefore, libraries have felt the need to demonstrate their values through quantifiable measures 
+             that link them to social and economic prosperity.
+          </div><br>
+          <div class="row">
+             Among all the ways to measure a library’s service values, return-on-investment (ROI) proves to be an effective method. ROI 
+             allows us to evaluate the efficiency of an investment in a particular asset. In general, ROI calculators will return dollar 
+             value estimates of circulation and program services of a library. For my research, I use the calculator provided by the 
+             Massachusetts Library Association on two main metrics: circulation and programming. These two metrics best represent the human
+              and social capital values that the libraries offer. By reading books and attending educational programs, citizens may broaden 
+              their knowledge and hone their vocational skills, which is crucial to the social and economic advancement of a community. Along 
+              with the “Total Capital Income” metric, ROI calculations will represent the libraries’ values. On the other hand, “Total Federal 
+              Aid” and “Total Public Sources” will demonstrate the investment value in the libraries. 
+          </div><br><hr><br>
           
+          <div class="row">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="all-counties-tab" data-toggle="tab" href="#all-counties" role="tab" aria-controls="all-counties" aria-selected="true">All Counties</a>
+                <a class="nav-item nav-link" id="cayuga-tab" data-toggle="tab" href="#cayuga" role="tab" aria-controls="cayuga" aria-selected="false">Cayuga</a>
+                <a class="nav-item nav-link" id="cortland-tab" data-toggle="tab" href="#cortland" role="tab" aria-controls="cortland" aria-selected="false">Cortland</a>
+                <a class="nav-item nav-link" id="madison-tab" data-toggle="tab" href="#madison" role="tab" aria-controls="madison" aria-selected="false">Madison</a>
+                <a class="nav-item nav-link" id="onondaga-tab" data-toggle="tab" href="#onondaga" role="tab" aria-controls="onondaga" aria-selected="false">Onondaga</a>
+                <a class="nav-item nav-link" id="oswego-tab" data-toggle="tab" href="#oswego" role="tab" aria-controls="oswego" aria-selected="false">Oswego</a>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="all-counties" role="tabpanel" aria-labelledby="all-counties-tab">
+                <script type='text/javascript' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'></script>
+                <div class='tableauPlaceholder' style='width: 100%; height: 100%;'><object class='tableauViz' width='750px' height='670px' 
+                  style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-apnortheast-a.online.tableau.com%2F' /> 
+                  <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;chtmp223' />
+                  <param name='name' value='Cayuga&#47;All' /><param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                  <param name='showAppBanner' value='false' /></object></div>
+              </div>
+              <div class="tab-pane fade" id="cayuga" role="tabpanel" aria-labelledby="cayuga-tab">
+                <script type='text/javascript' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'></script>
+                <div class='tableauPlaceholder' style='width: 100%; height: 100%;'><object class='tableauViz' width='750px' height='670px'  
+                style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-apnortheast-a.online.tableau.com%2F' /> 
+                <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;chtmp223' />
+                <param name='name' value='Cayuga&#47;Cayuga' /><param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                <param name='showAppBanner' value='false' /></object></div>
+              </div>
+              <div class="tab-pane fade" id="cortland" role="tabpanel" aria-labelledby="cortland-tab">
+                <script type='text/javascript' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'></script>
+                <div class='tableauPlaceholder' style='width: 100%; height: 100%;'><object class='tableauViz' width='750px' height='670px'  
+                  style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-apnortheast-a.online.tableau.com%2F' /> 
+                  <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;chtmp223' />
+                  <param name='name' value='Cayuga&#47;Cortland' /><param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                  <param name='showAppBanner' value='false' /></object></div>
+              </div>
+              <div class="tab-pane fade" id="madison" role="tabpanel" aria-labelledby="madison-tab">
+                <script type='text/javascript' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'>
+                </script><div class='tableauPlaceholder' style='width: 100%; height: 100%;'><object class='tableauViz' width='750px' height='670px' 
+                 style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-apnortheast-a.online.tableau.com%2F' /> 
+                <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;chtmp223' />
+                <param name='name' value='Cayuga&#47;Madison' /><param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                <param name='showAppBanner' value='false' /></object></div>
+              </div>
+              <div class="tab-pane fade" id="onondaga" role="tabpanel" aria-labelledby="onondaga-tab">
+                <script type='text/javascript' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'></script>
+                <div class='tableauPlaceholder' style='width: 100%; height: 100%;'><object class='tableauViz' width='750px' height='670px'  
+                  style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-apnortheast-a.online.tableau.com%2F' /> 
+                  <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;chtmp223' />
+                  <param name='name' value='Cayuga&#47;Onondaga' /><param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                  <param name='showAppBanner' value='false' /></object></div>
+              </div>
+              <div class="tab-pane fade" id="oswego" role="tabpanel" aria-labelledby="oswego-tab">
+                <script type='text/javascript' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'></script>
+                <div class='tableauPlaceholder' style='width: 100%; height: 100%;'><object class='tableauViz' width='750px' height='670px' 
+                  style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-apnortheast-a.online.tableau.com%2F' /> 
+                  <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;chtmp223' />
+                  <param name='name' value='Cayuga&#47;Oswego' /><param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                  <param name='showAppBanner' value='false' /></object></div>
+              </div>
+            </div>
+          </div><br><hr><br>
+
+          <div class="row">
+            <div id="rectangle_section"></div><br>
+            <h3 id = "subtag">What does this mean? </h3>
+            <br><br>
+            <div class="row">
+              For every county in Central New York, the generated value is significantly higher than the funding of public libraries. For 
+              instance, in 2018, libraries in Onondaga demonstrated generated values ($742,282) that were nearly three times higher than 
+              their funding ($258,505). This means that for every dollar of taxpayer’s money, libraries offer services that are worth as high 
+              as $3. For some other counties, the value-investment ratio can be as high as 7 to 1. In 2014, Cortland’s public library value 
+              ($707,303) was almost seven times as high as the funding ($97,406). Thanks to this common pattern, we can safely conclude that 
+              libraries offer services at a much higher value than the budget they receive. 
+            </div><br>
+            <div class="row">
+              On the other hand, when it comes to statistics in each funding/value category, there is no consistent trend. For all counties,
+              while the funding values remained stable, the generated values fluctuated slightly: the values went down slowly from 2014 to 2016,
+              picked up again in 2017, and then experienced a decrease at the end of the period. The same pattern applied to every county, with 
+              the exception of Madison county where the funding values recorded a completely downward trend. The highest generated value was 
+              recorded in Onondaga at almost $3 million. 
+            </div><br>
+            <div class="row">
+              When we break the funding category into total public sources and federal aid, we can easily see that there is a wide 
+              discrepancy between public sources and federal aid values (which are mostly $0). The same pattern can be observed in the 
+              generated value, with return-on-investment value significantly higher than capital income. For instance, in Oswego in 2018, 
+              the federal aid is $0 while the public sources are $258,505. Similarly, while the capital income is only $8,413, the 
+              return-on-investment is $733,869. Therefore, it is obvious that public sources and return-on-investment are respectively the 
+              two main factors in the funding and generated value category. 
+            </div><br>
+            <div class="row">
+              The apparent discrepancy between funding and generated values have successfully demonstrated the values of library services. 
+              Not only are public libraries worth US taxpayers’ money but they also make major contributions to the development of human 
+              capital in the US. Their values are not strictly money values - they offer our community boundless knowledge and resources 
+              regardless of people’ background. Therefore, libraries deserve an increase in budget instead of the cutdown they’ve always 
+              been threatened with. 
+            </div><br>
+          </div>
         </div>
       </div>
     </div>
