@@ -168,12 +168,22 @@ ul li a {
     font-size: 50px;
 }
 
+
+#rectangle{
+    width: 60px; 
+    height: 10px; 
+    margin: 20px; 
+    background-color:#f8b24f;
+}
+
+
 #rectangle_section{
     width: 50px; 
     height: 10px; 
     margin: 20px; 
     background-color:#f8b24f;
 }
+
 
 #subtag {
     background-color: #f8b24f; 
