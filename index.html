@@ -38,6 +38,9 @@
             <a class="nav-link js-scroll-trigger" href="#educ">Education</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#future">Future Work</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#ref">References</a>
           </li>
         </ul>
@@ -176,7 +179,7 @@
             Among all the ways to measure a library’s service values, return-on-investment (ROI) proves to be an effective method. ROI allows us to evaluate the efficiency of an investment in a particular asset. In general, ROI calculators will return dollar value estimates of circulation and program services of a library. For my research, I use the calculator provided by the Massachusetts Library Association on two main metrics: circulation and programming. These two metrics best represent the human and social capital values that the libraries offer. By reading books and attending educational programs, citizens may broaden their knowledge and hone their vocational skills, which is crucial to the social and economic advancement of a community. Along with the “Total Capital Income” metric, ROI calculations will represent the libraries’ values. On the other hand, “Total Federal Aid” and “Total Public Sources” will demonstrate the investment value in the libraries.
           </div><br><hr><br>
           <div class="row">
-            <iframe src="https://public.tableau.com/views/roi_tableau/All?:language=en&:display_count=y&:origin=viz_share_link&:showVizHome=no&:embed=true"
+            <iframe src="https://public.tableau.com/views/roi_tableau/Cayuga?:language=en&:display_count=y&:origin=viz_share_link&:showVizHome=no&:embed=true"
             width="100%" height="650px" frameBorder="0"></iframe>
           </div><br><hr><br>
 
@@ -251,7 +254,60 @@
           <div class="row">
             In today’s world, a high school diploma is the minimum requirement for many job opportunities. People who have at least a high school diploma have higher-paid jobs than those who don’t. In 2019, the U.S. Bureau of Labor Statistics projected that people with less than a high school diploma have median weekly earnings of $592 and this group bears an unemployment rate of 5.4%. By comparison, people with a high school diploma had median weekly earnings of $746 and an unemployment rate of 3.7%. Educated people can adapt better to a changing economy and constant technological developments. 
           </div>
+        </div><br><br>
+      </div>
+    </div>
+  </section>
+
+  <section id="future">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class = "title">Future Work</h2>
+          <br><br>
+          <div class="row">
+            Public libraries have been an integral part of literacy development and educational growth.People turn to libraries for their curated collections of books, as well as for a quiet environment conducive to study. For children and young adults, libraries also have many programs that aim to promote school readiness and educational development. Perhaps most importantly, libraries offer an environment filled with books, where children can have early literary experiences and thus develop their desire to read. Library programs also offer children a reader community, where they can discuss reading progress with their peers. Additionally, parents who actively bring their children to these programs are more likely to be strongly invested in their children’s educational achievements. By doing this, parents can also establish a stronger relationship with their children through the act of reading. 
+          </div><br>
+          <div class="row">
+            3rd grade ELA scores and high school graduation are two most critical milestones in a child’s educational development progress. For this topic, I explore the impact of library programming and circulation on children’s ELA passing rate and high school education attainment. The program attendance and circulation metrics are found in the BiblioConnect dataset. The ELA passing rates and high school graduation rates are retrieved from the New York State Education Department (NYSED) website. The passing rate is the percentage of students who achieve level 2 (proficient) and above in the exam. The correlation between library usage and education outcome category are demonstrated with Kendall’s tau-a values. 
+          </div><br><hr><br>
+
+        <div class="row">
+          <p style = "font-size: 25px;">ELA passing rate vs circulation and program attendance rate</p><br>
+          <iframe src="https://public.tableau.com/views/grade_15957781242170/Cayuga?:language=en&:display_count=y&:origin=viz_share_link&:showVizHome=no&:embed=true"
+          width="100%" height="650px" frameBorder="0"></iframe>
+        </div><br><br>
+        <div class="row">
+          <div id="rectangle_section"></div><br>
+          <h3 id = "subtag">What does this mean? </h3>
+          <br><br>
+          <div class="row">
+            All counties in Central New York share a common trend. While the circulation and program attendance rate remained relatively flat throughout the 5-year period, the ELA passing rate experienced an upward trend until 2017, at which point it decreased significantly. In general, the passing rate stayed within the 50% to 80% range. 
+          </div><br>
+          <div class="row">
+            The correlation between ELA passing rate and circulation rate is relatively weak for all counties, with Cortland and Oswego having a negative correlation. The highest tau value is recorded at 0.3162278 for Cayuga. On the other hand, the correlation between ELA passing rate and program attendance rate is fairly high, with tau values for all counties averaging at about 0.5. 
+          </div><br>
+          <div class="row">
+            In general, a high correlation between ELA passing rate and library usage means that these library services have a positive impact on children’s reading skill development. By third grade, a child should be ready to use their reading skills as a learning tool. Children still struggling to read at this point may experience difficulty as they matriculate through a school's curriculum. In this way, Libraries provide necessary support for early literacy initiatives.
+          </div>
         </div><br><hr><br>
+
+        <div class="row">
+          <p style = "font-size: 25px;">High school graduation rate vs circulation and program attendance rate</p><br>
+          <iframe src="https://public.tableau.com/views/grad/Cayuga?:language=en&:display_count=y&:origin=viz_share_link&:showVizHome=no&:embed=true"
+          width="100%" height="650px" frameBorder="0"></iframe>
+        </div><br><br>
+        <div class="row">
+          <div id="rectangle_section"></div><br>
+          <h3 id = "subtag">What does this mean? </h3>
+          <br><br>
+          <div class="row">
+            All counties in Central New York experienced a relatively stable trend when it comes to high school graduation rates. The graduation rate remained within the 70%-90% range. The correlation between circulation and graduation rate fluctuated from county to county, with the highest tau value at 0.6708204 in Cayuga and lowest at -0.316528 in Madison. On the other hand, the correlation between program attendance and graduation rate is positive for all counties, with the exception of Madison and Onondaga (no correlation). In general, a high correlation between high school graduation and library usage means that these library services have a positive impact on children’s reading skill development. 
+          </div><br>
+          <div class="row">
+            In today’s world, a high school diploma is the minimum requirement for many job opportunities. People who have at least a high school diploma have higher-paid jobs than those who don’t. In 2019, the U.S. Bureau of Labor Statistics projected that people with less than a high school diploma have median weekly earnings of $592 and this group bears an unemployment rate of 5.4%. By comparison, people with a high school diploma had median weekly earnings of $746 and an unemployment rate of 3.7%. Educated people can adapt better to a changing economy and constant technological developments. 
+          </div>
+        </div><br><br>
       </div>
     </div>
   </section>
