@@ -10,6 +10,3 @@ This is an interactive "poster" showcasing our findings for the BiblioConnect pr
 * JavaScript
 * JQuery
 * Bootstrap 4
-
-## Authors
-* **Chau Pham** - [linkedin](https://linkedin.com/in/chautmpham)
